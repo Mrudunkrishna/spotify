@@ -1,5 +1,6 @@
 import React from 'react'
 import './spotify.css'
+import spotify from '../assets/Spotify_logo.png';
 
 export const Spotify = () => {
   return (
@@ -10,7 +11,7 @@ export const Spotify = () => {
     </div>
     <div class="container">
       <nav class="main-nav">
-        <img class="spotify-logo" src="src/assets/Spotify_logo.png" />
+        <img class="spotify-logo" src={spotify} alt=""/>
         <ul class="nav-options">
           <li><a href="#" class="white-text green">Premium</a></li>
           <li><a href="#" class="white-text green">Help</a></li>
@@ -18,7 +19,7 @@ export const Spotify = () => {
           <li><div class="line"></div></li>
           <li><a href="#" class="grey-text green">Sign up</a></li>
           <li><a href="#" class="grey-text green">Log In</a></li>
-          <img class="spotify-logo-sidebar display" src="src/assets/Spotify_logo.png"/>
+          <img class="spotify-logo-sidebar display" src={spotify}/>
         </ul>
       </nav>
       <div class="cards">
